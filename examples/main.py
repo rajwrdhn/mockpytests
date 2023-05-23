@@ -7,3 +7,7 @@ def func_slow():
 def func_slowdown():
     dataset = DataSet()
     return dataset.data_loader()
+
+def num_return():
+    r_val = DataSet()
+    return r_val.return_val()

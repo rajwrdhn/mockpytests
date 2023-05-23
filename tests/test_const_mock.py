@@ -1,6 +1,7 @@
 import examples.func
 from examples.func import concat
 
+#Mocking a constant from examples.func
 def test_const_mock(mocker):
     mocker.patch.object(examples.func, 'STRING_A', 'HELLO ')
     expected = "HELLO RAJ!"
@@ -9,6 +10,7 @@ def test_const_mock(mocker):
     assert expected == actual
 
 
+#Mocking a constant from examples.func
 def test_mock_twice(mocker):
     mocker.patch.object(examples.func, 'STRING_A', 'HI ')
     expected = "HI RAJ!"
