@@ -1,1 +1,2 @@
 STRING_A = "HELLO "
+NUM_CONST= 20

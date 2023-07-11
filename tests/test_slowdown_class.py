@@ -1,4 +1,5 @@
-from examples.main import func_slowdown, num_return
+import examples
+from examples.main import func_slowdown, num_return, static_return
 
 #mocking a class
 def test_mocking_class_method(mocker):
@@ -26,4 +27,11 @@ def test_return_val_class_method(mocker):
         mock_num
     )
     actual = num_return()
+    assert expected == actual
+
+def test_static_return(mocker):
+    expected = "always this!!"
+
+    actual = static_return()
+
     assert expected == actual

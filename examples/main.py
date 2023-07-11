@@ -11,3 +11,7 @@ def func_slowdown():
 def num_return():
     r_val = DataSet()
     return r_val.return_val()
+
+def static_return():
+    stat = DataSet()
+    return stat.static_return()

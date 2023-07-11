@@ -17,3 +17,10 @@ def test_mock_twice(mocker):
     actual = concat()
 
     assert expected == actual
+
+def test_mock_double(mocker):
+    mocker.patch.object(examples.func, 'NUM_CONST', 300)
+    expected = 600
+    actual = examples.func.double()
+
+    assert expected == actual

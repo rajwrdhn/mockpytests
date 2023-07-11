@@ -17,3 +17,7 @@ class DataSet:
     def return_val(self):
         time.sleep(3)
         self.num = 3
+
+    @staticmethod
+    def static_return():
+        return "always this!!"
